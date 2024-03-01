@@ -10,6 +10,8 @@ https://doi.org/10.1101/2022.03.24.485545
 
 sdmTMB documentation: https://pbs-assess.github.io/sdmTMB/ (see 'Articles')
 
+sdmTMB discussion board: https://github.com/pbs-assess/sdmTMB/discussions
+
 tinyVAST preprint: 
 
 Thorson, J. T., Anderson, S. C., Goddard, P., & Rooper, C. N. 2024. tinyVAST: R package with an expressive interface to specify lagged and simultaneous effects in multivariate spatio-temporal models (arXiv:2401.10193). arXiv. http://arxiv.org/abs/2401.10193
