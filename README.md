@@ -3,7 +3,8 @@
 Necessary packages:
 
 ```r
-pkgs <- c("RTMB", "fmesher", "dplyr", "ggplot2", "cowplot", "here", "sdmTMB")
+# install.packages("RTMB")
+pkgs <- c("fmesher", "dplyr", "ggplot2", "cowplot", "here", "sdmTMB")
 install.packages(pkgs)
 ```
 
