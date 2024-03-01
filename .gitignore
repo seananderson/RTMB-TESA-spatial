@@ -6,4 +6,4 @@
 *.jpg
 *.jpeg
 *.js
-slides/libs/header-attrs-2.25/header-attrs.js
+*_cache*
