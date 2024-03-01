@@ -14,4 +14,4 @@ Exercises and example code are in `exercises`.
 
 Xaringan .Rmd slide source code is in `slides`.
 
-[PDF of slides](https://www.dropbox.com/scl/fi/jhyrb48wtgvnbq0hpm8ng/IMG_8619.MOV?rlkey=l7cbdh20hlh4j8gqzi7qin81u&dl=1)
+[PDF of slides](https://www.dropbox.com/scl/fi/qha79zgvwr811ivvj68jo/RTMB-spatial-2024-03-01.pdf?rlkey=np16u8cjydk5cp8f7dgjte73u&dl=1)
