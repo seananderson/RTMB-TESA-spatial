@@ -57,6 +57,22 @@ options(ggplot2.continuous.fill = "viridis")
 ggplot2::theme_set(ggplot2::theme_minimal())
 ```
 
+# Download the files
+
+https://github.com/seananderson/RTMB-TESA-spatial
+
+.xsmall[
+Look at README.md and make sure you have the packages installed.
+
+I'll also post the files on the ICES page.
+]
+
+```{r download, out.width = '53%'}
+knitr::include_graphics("images/download-zip.jpg")
+```
+
+---
+
 # Plan
 
 .small[
@@ -994,19 +1010,33 @@ and 05-spatiotemporal2-spde.R
 
 # Summary
 
+.small[
 Geostatistical models can be fit efficiently with RTMB.
+]
 
 --
 
+.small[
 There are a few extra steps to set up the SPDE approach, but the efficiency gains are well worth it.
+]
 
 --
 
+.small[
+Spatially varying coefficients are a powerful underused approach.
+]
+
+--
+
+.small[
 You have all the building blocks now to build complex spatial and/or spatiotemporal models.
+]
 
 --
 
-Coding them is not too bad, but be warned: understanding what they mean, why they fit the way they do, and if they represent the data well is more challenging!
+.small[
+Coding these models is not too bad, but be warned: understanding what they mean, why they fit the way they do, and if they represent the data well is challenging!
+]
 
 ---
 
