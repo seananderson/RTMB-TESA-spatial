@@ -278,11 +278,11 @@ background-size: 35%
 
 # Random field
 
-* A 2 dimensional "Gaussian Process"
+A 2 dimensional "Gaussian Process".
 
 --
 
-* A realization from a multivariate normal distribution with some covariance function
+A realization from a multivariate normal distribution constrained by some covariance function.
 
 ---
 background-image: url("images/elmo.png")
@@ -291,15 +291,15 @@ background-size: 30%
 
 # Random field
 
-* A way of estimating a wiggly surface to account for spatial and/or spatiotemporal correlation in data.
+A way of estimating a wiggly surface to account for spatial and/or spatiotemporal correlation in data.
 
 --
 
-* Alternatively, a way of estimating a wiggly surface to account for latent or unobserved spatially structured variables.
+Alternatively, a way of estimating a wiggly surface to account for unobserved spatially structured variables.
 
 --
 
-* As a bonus, it provides useful covariance parameter estimates: spatial variance and the rate at which data become uncorrelated with distance
+As a bonus, it provides useful parameter estimates: spatial variance (magnitude of wiggles) and the rate at which data become uncorrelated with distance (how smooth are the wiggles).
 
 ---
 
@@ -307,13 +307,23 @@ background-size: 30%
 
 - These constrain the random field MVN distribution.
 
+--
+
 - They define how correlation decays with distance.
+
+--
 
 - Can be isotropic or anisotropic.
 
+--
+
 - Common choices: exponential, Gaussian, Matérn.
 
+--
+
 - We'll start with exponential and Gaussian.
+
+--
 
 - We'll come back to the Matérn.
 
@@ -379,15 +389,15 @@ class: center, middle, inverse
 
 3. Calculate log likelihood with `dmvnorm()`
 
-*Look at code*
-
 ---
 
 # Direct estimation of a random field exercise
 
-See `spatial-pacific/01-spatial-dmvnorm-exercise.R`.
+See `exercises/01-spatial-dmvnorm-exercise.R`.
 
-Fill in the exponential correlation and fit the model. $\mathcal{C}\left(d\right) = e^{ -d/\rho }$
+We'll walk through the first part together.
+
+Fill in the exponential correlation and fit the model. $\mathcal{C}\left(d\right) = e^{ -d/\rho }$.
 
 With your neighbour, answer the questions at the bottom of the file.
 
@@ -966,8 +976,6 @@ Why include spatial fields?
   * Ecological interpretation
   * More flexible fit to the data
   * Prediction in new time steps
-* For autoregressive fields:
-  * Same reasons as for IID fields, plus:
   * Otherwise the initial time-step field would have to be drawn from the same
     variance as the time-step innovations
 ]
@@ -981,3 +989,33 @@ class: center, middle, inverse
 See file 05-spatiotemporal-spde.R
 
 and 05-spatiotemporal2-spde.R
+
+---
+
+# Summary
+
+Geostatistical models can be fit efficiently with RTMB.
+
+--
+
+There are a few extra steps to set up the SPDE approach, but the efficiency gains are well worth it.
+
+--
+
+You have all the building blocks now to build complex spatial and/or spatiotemporal models.
+
+--
+
+Coding them is not too bad, but be warned: understanding what they mean, why they fit the way they do, and if they represent the data well is more challenging!
+
+---
+
+# Learning more
+
+Thorson, J.T., and Kristensen, K. 2024. Spatio-Temporal Models for Ecologists. Chapman and Hall/CRC, Boca Raton. https://doi.org/10.1201/9781003410294
+
+sdmTMB: https://doi.org/10.1101/2022.03.24.485545
+
+tinyVAST: http://arxiv.org/abs/2401.10193
+
+See file: `references.md`

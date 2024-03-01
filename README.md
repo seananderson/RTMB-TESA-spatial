@@ -12,3 +12,5 @@ Data are in `data`.
 Exercises and example code are in `exercises`.
 
 Xaringan .Rmd slide source code is in `slides`.
+
+PDF of slides: 

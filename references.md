@@ -1,3 +1,5 @@
+Thorson, J.T., and Kristensen, K. 2024. Spatio-Temporal Models for Ecologists. Chapman and Hall/CRC, Boca Raton. https://doi.org/10.1201/9781003410294
+
 sdmTMB preprint:
 
 Anderson, S.C., E.J. Ward, P.A. English, L.A.K. Barnett., J.T. Thorson.
@@ -40,3 +42,10 @@ Barnett, L.A.K., Ward, E.J., and Anderson, S.C. 2021. Improving estimates of spe
 Thorson, J.T. 2019. Guidance for decisions using the Vector Autoregressive Spatio-Temporal (VAST) package in stock, ecosystem, habitat and climate assessments. Fisheries Research 210: 143–161. doi:10.1016/j.fishres.2018.10.013.
 
 Advanced Spatial Modeling with Stochastic Partial Differential Equations Using R and INLA. https://becarioprecario.bitbucket.io/spde-gitbook/index.html
+
+A Bayesian predictive process Gaussian (or multivariate-t) random field model:
+
+Anderson, S.C., and Ward, E.J. 2019. Black swans in space: modelling spatiotemporal processes with extremes. Ecology 100(1): e02403. doi:10.1002/ecy.2403.
+https://CRAN.R-project.org/package=glmmfields
+
+Some spatial/spatiotemporal RTMB examples in Chris Cahill's class: https://github.com/QFCatMSU/RTMB
