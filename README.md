@@ -1,4 +1,4 @@
-# Geostatistical modelling with RTMB: ICES/TESA 2024 workshop
+### Geostatistical modelling with RTMB: ICES/TESA 2024 workshop
 
 Necessary packages:
 
