@@ -99,8 +99,7 @@ nll <- function(par) {
   # REPORT(omega_pred) # faster, but no SEs on predictions
 
   # data likelihood:
-  log(length) %~% dnorm(log(pred), exp(log_obs_sd))
-
+  log(length) %~% dnorm(as.vector(log(pred)), exp(log_obs_sd))
   # derived values:
 
   # distance correlation ~0.1 (p4 in Lindgren et al. 2011):
