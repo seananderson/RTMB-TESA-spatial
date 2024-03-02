@@ -1,3 +1,9 @@
+https://kaskr.r-universe.dev/articles/RTMB/RTMB-introduction.html
+
+https://kaskr.r-universe.dev/articles/RTMB/RTMB-advanced.html
+
+https://kaskr.github.io/adcomp/_book/Introduction.html
+
 Thorson, J.T., and Kristensen, K. 2024. Spatio-Temporal Models for Ecologists. Chapman and Hall/CRC, Boca Raton. https://doi.org/10.1201/9781003410294
 
 sdmTMB preprint:
