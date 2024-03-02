@@ -992,8 +992,9 @@ Why include spatial fields?
   * Ecological interpretation
   * More flexible fit to the data
   * Prediction in new time steps
-  * Otherwise the initial time-step field would have to be drawn from the same
-    variance as the time-step innovations
+  
+* For autoregressive fields:
+  * Same reasons + otherwise the initial time-step field would have to be drawn from the same variance as the time-step innovations
 ]
 
 ---
