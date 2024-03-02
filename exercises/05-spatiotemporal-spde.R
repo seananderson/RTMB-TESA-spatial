@@ -7,7 +7,7 @@ options(ggplot2.continuous.colour = "viridis")
 options(ggplot2.continuous.fill = "viridis")
 theme_set(theme_light())
 
-# Simulate some fake data ---------------------------------------------------
+# Load data -----------------------------------------------------------------
 
 dat <- sdmTMB::pcod
 
