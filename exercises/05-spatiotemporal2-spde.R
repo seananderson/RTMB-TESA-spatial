@@ -42,7 +42,7 @@ nll <- function(par) {
   kappa <- exp(log_kappa)
 
   # compute precision matrix Q, e.g. Lindgren + Rue 2015 JSS p4:
-  Q0 <- tau0^2 * (kappa^4 * spde$c0 + 2 * kappa^2 * spde$g1 + spde$g2)
+  Q0 <- tau0^2 * (kappa^4 * spde$c0 + 2 * kappa^2 * spde$g1 + spde$g2) #< NEW
   Q <- tau^2 * (kappa^4 * spde$c0 + 2 * kappa^2 * spde$g1 + spde$g2)
 
   rf0 %~% dgmrf(0, Q0) #< NEW
@@ -134,6 +134,8 @@ ggplot(dat, aes(X, Y, colour = rf_spatial)) +
   geom_point() +
   facet_wrap(~year)
 
+Matrix::image(obj$env$spHess(random = TRUE))
+
 # Compare same model in sdmTMB ----------------------------------------------
 
 library(sdmTMB)
@@ -143,7 +145,7 @@ m <- sdmTMB(
   family = binomial(),
   data = dat,
   time = "year",
-  spatial = "on",
+  spatial = "on", #< NEW
   spatiotemporal = "rw",
   mesh = mesh0
 )
