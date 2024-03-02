@@ -106,7 +106,6 @@ nll <- function(par) {
 tmb_data <- list(
   observed = dat$catch_weight,
   area_swept = dat$area_swept,
-  mesh = mesh,
   spde = spde,
   interpolator_data = interpolator_data,
   covariate = dat$year_centered

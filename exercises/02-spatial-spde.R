@@ -126,7 +126,6 @@ nll <- function(par) {
 }
 
 tmb_data <- list(observed = sim$observed)
-tmb_data$mesh <- mesh
 tmb_data$spde <- spde
 tmb_data$interpolator_data <- interpolator_data
 tmb_data$interpolator_prediction <- interpolator_prediction
