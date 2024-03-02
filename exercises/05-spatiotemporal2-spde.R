@@ -7,10 +7,9 @@ options(ggplot2.continuous.colour = "viridis")
 options(ggplot2.continuous.fill = "viridis")
 theme_set(theme_light())
 
-# Simulate some fake data ---------------------------------------------------
+# Load data -----------------------------------------------------------------
 
 dat <- sdmTMB::pcod
-prediction_grid <- sdmTMB::qcs_grid
 
 # observations
 ggplot(dat, aes(X, Y, colour = present)) +
@@ -84,7 +83,6 @@ nll <- function(par) {
 
 tmb_data <- list(
   observed = dat$present,
-  mesh = mesh,
   spde = spde,
   interpolator_data = interpolator_data,
   n_t = length(unique(dat$year)),
